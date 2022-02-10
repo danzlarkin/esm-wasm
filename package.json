@@ -1,0 +1,17 @@
+{
+  "name": "esm-wasm",
+  "version": "0.0.1",
+  "description": "An example of ES Modules + Web Assembly for Cloudflare Workers (modules)",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "npm run build-js && npm run build-wasm",
+    "build-js": "tools/build-js.sh",
+    "build-wasm": "tools/build-wasm.sh",
+    "dev": "wrangler dev",
+    "publish": "wrangler publish"
+  },
+  "devDependencies": {
+    "@cloudflare/wrangler": "^1.19.8",
+    "esbuild": "^0.14.21"
+  }
+}
